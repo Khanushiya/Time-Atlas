@@ -28,6 +28,3 @@ def get_year(year):
     if str(year) in TIME_DATA:
         return jsonify({'year': year, 'matched': year, 'data': TIME_DATA[str(year)]})
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
