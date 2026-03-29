@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Time Atlas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- Space background -->
+  <canvas id="space-canvas"></canvas>
+  <div class="nebula nebula-1"></div>
+  <div class="nebula nebula-2"></div>
+  <div class="nebula nebula-3"></div>
+  <div class="nebula nebula-4"></div>
+  <div class="nebula nebula-5"></div>
+  <div class="nebula nebula-6"></div>
+
+  <div id="content">
+
+    <header>
+      <h1>Time Atlas: A Virtual Time Machine</h1>
+      <p class="subtitle">♾️ Explore history, culture, and technology from 1900 to 2025 ♾️</p>
+    </header>
+
+    <section class="card">
+      <h2>Temporal Navigation System</h2>
+      <p class="instruction">Enter a year (1900–2025) and travel through time.</p>
+
+      <label for="yearInput">Destination Year</label>
+      <input id="yearInput" type="number" placeholder="e.g. 1969" min="1900" max="2025">
+      <button onclick="travel()">⏳ Let’s Go</button>
+      <p class="timeline">1900 ———————————————— 2025</p>
+    </section>
+
+    <!-- Result section, hidden until travel() fires -->
+    <section class="card" id="result-card" style="display:none;">
+      <div id="result-header">
+        <span id="result-year-label"></span>
+        <span id="result-match-note"></span>
+      </div>
+
+      <!-- Summary -->
+      <p id="result-summary"></p>
+
+      <!-- Historical Highlights -->
+      <div class="section-divider">
+        <span class="section-title">Historical Highlights</span>
+      </div>
+      <div class="fields-grid" id="fields-grid"></div>
+
+      <!-- Funny Moments -->
+      <div class="section-divider" id="punchline-divider">
+        <span class="section-title">Funny Moment</span>
+      </div>
+      <div class="punchline-box" id="punchline-box"></div>
+    </section>
+
+    <section class="card about">
+      <h2>About</h2>
+      <p>The Time Atlas is an interactive virtual time machine that lets you explore different years in modern history.</p>
+      <p>The project combines programming, storytelling, and historical data to create a fun digital experience that feels like traveling through a timeline of modern civilization.</p>
+    </section>
+
+  </div>
+  <script src="{{ url_for('static', filename='script.min.js') }}"></script>
+</body>
+</html>

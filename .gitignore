@@ -1,0 +1,10 @@
+app.py
+
+/static/script.js
+
+
+Data.json
+
+
+*.env
+__pycache__/
