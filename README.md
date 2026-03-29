@@ -1,18 +1,66 @@
-# Time Atlas: A Virtual Time Machine
+# Time Atlas — A Virtual Time Machine
 
-Time Atlas is an interactive project that lets you explore history, culture, and technology from 1900 to 2025.  
+🔗 **Live Demo:** https://time-atlas.onrender.com/
 
-## Features
-- Temporal Navigation System: Enter a year and see historical highlights.
-- Funny moments and punchlines for each year.
-- Space-themed animated background.
-- Works entirely in the browser with minified JS.
+Time Atlas is an interactive web application that lets you explore history, culture, and technology from **1900 to 2025** — all through a clean, animated, space-themed interface.
 
-## How to Use
-1. Open `index.html` in your browser.
-2. Enter a year (1900–2025) in the input field.
-3. Click "⏳ Let’s Go" to see historical data and funny moments.
+---
 
-## Note
-- Original scripts, data files, and backend Python code are **not included** in this public repo for security.
-- Only minified JS, HTML, and CSS are public.
+## 🚀 Features
+
+* 🕰️ **Year-Based Exploration**
+  Enter any year between 1900–2025 and instantly view key highlights.
+
+* 😂 **Fun & Engaging Content**
+  Each year includes interesting moments and light humor to keep it engaging.
+
+* 🌌 **Space-Themed UI**
+  Smooth animations and immersive design for a futuristic experience.
+
+* ⚡ **Fast & Responsive**
+  Powered by Flask backend + optimized frontend for quick loading.
+
+---
+
+## 🧑‍💻 How to Use
+
+1. Open the live app:
+   👉 https://time-atlas.onrender.com/
+
+2. Enter a year (1900–2025)
+
+3. Click **“⏳ Let’s Go”**
+
+4. Explore historical insights instantly!
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend:** Python (Flask)
+* **Deployment:** Render
+
+---
+
+## 🔐 Data & Security
+
+* Core dataset and backend logic are **securely stored and not publicly exposed**.
+* Sensitive data is protected using **server-side handling and private storage**.
+* Only necessary data is served via API.
+
+---
+
+## ⚠️ Note
+
+This project is designed for **interactive learning and entertainment purposes**.
+Some content may be simplified or stylized for better user experience.
+
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Khanushiya*
+
+---
