@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, jsonify
 import json
 import os
 
+app = Flask(__name__)
+
 SECRET_PATH = "/etc/secrets/Data.json"
 
 if os.path.exists(SECRET_PATH):
