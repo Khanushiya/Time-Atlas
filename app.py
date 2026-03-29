@@ -2,13 +2,15 @@ from flask import Flask, render_template, request, jsonify
 import json
 import os
 
-app = Flask(__name__)
+SECRET_PATH = "/etc/secrets/Data.json"
 
-# Load data.json once at startup
-DATA_PATH = os.path.join(os.path.dirname(__file__), 'Data.json')
+if os.path.exists(SECRET_PATH):
+    DATA_PATH = SECRET_PATH
+else:
+    DATA_PATH = os.path.join(os.path.dirname(__file__), 'Data.json')
+
 with open(DATA_PATH, 'r') as f:
     TIME_DATA = json.load(f)
-
 
 @app.route('/')
 def index():
